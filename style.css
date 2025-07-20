@@ -1,0 +1,35 @@
+/* Custom styles for the to-do application */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark background from Tailwind's gray-900 */
+    color: #F9FAFB; /* Tailwind's gray-50 */
+}
+
+/* Show delete button on hover of a task item */
+.task-item:hover .delete-btn {
+    opacity: 1;
+}
+
+/* Hide delete button by default */
+.delete-btn {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Custom focus style for the task input */
+.task-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6; /* Blue focus ring */
+}
+
+/* Style for the active filter button */
+.filter-btn.active {
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+    color: white;
+}
+
+/* Style for completed tasks */
+.completed-task {
+    text-decoration: line-through;
+    color: #6b7280; /* Tailwind's gray-500 */
+}
